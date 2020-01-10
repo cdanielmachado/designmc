@@ -7,31 +7,21 @@ from setuptools import setup, find_packages
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
-
-requirements = [ ]
-
-setup_requirements = ['pytest-runner', ]
-
-test_requirements = ['pytest>=3', ]
+requirements = ['reframed', 'pandas']
+setup_requirements = ['reframed', 'pandas']
 
 setup(
     author="Daniel Machado",
     author_email='cdanielmachado@gmail.com',
-    python_requires='>=3.5',
+    python_requires='>=3.6',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
     ],
-    description="MDeMicrobial Community Designer",
+    description="Microbial Community Designer",
     entry_points={
         'console_scripts': [
             'designmc=designmc.cli:main',
@@ -39,14 +29,14 @@ setup(
     },
     install_requires=requirements,
     license="Apache Software License 2.0",
-    long_description=readme + '\n\n' + history,
+    long_description=readme,
     include_package_data=True,
     keywords='designmc',
     name='designmc',
     packages=find_packages(include=['designmc', 'designmc.*']),
     setup_requires=setup_requirements,
     test_suite='tests',
-    tests_require=test_requirements,
+    tests_require=requirements,
     url='https://github.com/cdanielmachado/designmc',
     version='0.1.0',
     zip_safe=False,
