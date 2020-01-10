@@ -2,3 +2,5 @@
 .vscode/*
 designmc.egg-info/*
 *.pyc
+build/*
+dist/*
