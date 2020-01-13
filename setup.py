@@ -1,14 +1,15 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 """The setup script."""
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
+with open('README.rst', encoding='utf-8') as readme_file:
     readme = readme_file.read()
 
-requirements = ['reframed', 'pandas']
-setup_requirements = ['reframed', 'pandas']
+requirements = ['reframed>=1.1.0', 'pandas']
+test_requirements = requirements + ['cplex']
 
 setup(
     author="Daniel Machado",
@@ -34,9 +35,9 @@ setup(
     keywords='designmc',
     name='designmc',
     packages=find_packages(include=['designmc', 'designmc.*']),
-    setup_requires=setup_requirements,
+    setup_requires=requirements,
     test_suite='tests',
-    tests_require=requirements,
+    tests_require=test_requirements,
     url='https://github.com/cdanielmachado/designmc',
     version='0.1.0',
     zip_safe=False,

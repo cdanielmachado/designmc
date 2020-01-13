@@ -1,6 +1,7 @@
 from random import sample
-from reframed import Community, SteadierCom, FBA
+from reframed import Community, SteadierCom
 import pandas as pd
+
 
 def design(species, target, environment, size=1, iters=100, growth=0.1, modelcache=None):
 
@@ -28,7 +29,7 @@ def design(species, target, environment, size=1, iters=100, growth=0.1, modelcac
 
         environment.apply(community.merged_model, exclusive=True, inplace=True, warning=False)
 
-        sol = SteadierCom(community, growth=0.1, objective1={target: 1}, proteome=True)
+        sol = SteadierCom(community, growth=growth, objective1={target: 1}, proteome=True)
 
         if sol is None:
             #print("infeasible")

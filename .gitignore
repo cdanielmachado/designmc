@@ -4,3 +4,6 @@ designmc.egg-info/*
 *.pyc
 build/*
 dist/*
+.eggs/*
+.idea/*
+.tox/*

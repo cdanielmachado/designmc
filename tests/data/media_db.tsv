@@ -1,0 +1,17 @@
+medium	description	compound	name
+C6	M9 + glucose + fructose	h2o	h2o
+C6	M9 + glucose + fructose	h	h
+C6	M9 + glucose + fructose	pi	pi
+C6	M9 + glucose + fructose	fru	fru
+C6	M9 + glucose + fructose	o2	o2
+C6	M9 + glucose + fructose	nh4	nh4
+C6	M9 + glucose + fructose	co2	co2
+C6	M9 + glucose + fructose	glc__D	glc__D
+AA	M9 + glu + gln - nh4	h2o	h2o
+AA	M9 + glu + gln - nh4	h	h
+AA	M9 + glu + gln - nh4	glu__L	glu__L
+AA	M9 + glu + gln - nh4	pi	pi
+AA	M9 + glu + gln - nh4	o2	o2
+AA	M9 + glu + gln - nh4	nh4	nh4
+AA	M9 + glu + gln - nh4	co2	co2
+AA	M9 + glu + gln - nh4	gln__L	gln__L
